@@ -1,2 +1,8 @@
 #!/bin/bash
-num1=`echo $WATER | tr water 01234`;num2=`echo $STIR | tr stir. 01234`;a=`echo $((5#$num1))`;b=`echo $((5#$num2))`;bw=`expr $a + $b`;ans=`printf "%o" $bw`;echo $ans | tr 01234567 bestchol 
+num1=`echo $WATER | tr water 01234`
+num2=`echo $STIR | tr stir. 01234`
+a=`echo $((5#$num1))`
+b=`echo $((5#$num2))`
+bw=`expr $a + $b`
+ans=`printf "%o" $bw`
+echo $ans | tr 01234567 bestchol 
